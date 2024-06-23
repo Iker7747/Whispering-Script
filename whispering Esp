@@ -1,1 +1,17 @@
-"-- loadstring\r\nlocal ESP = loadstring(game:HttpGet(\"https://kiriot22.com/releases/ESP.lua\"))()\r\n \r\n-- config\r\nESP.Players = true\r\nESP.Boxes = true\r\nESP.Names = true\r\nESP:Toggle(true)\r\n \r\n-- object\r\nESP:AddObjectListener(Workspace.Rake, { -- Object Path, For example: Workspace.ThisFolder\r\n    Name = \"HumanoidRootPart\", --Object name inside of the path, for example: Workspace.ThisFolder.Item_1\r\n    CustomName = \"Rake\", -- Name you want to be displayed\r\n    Color = Color3.fromRGB(255, 0, 0), -- Color\r\n    IsEnabled = \"Rake\" -- Any name, has to be the same as the last line: ESP.TheNameYouWant\r\n})\r\nESP.Rake = true"
+-- loadstring
+local ESP = loadstring(game:HttpGet("https://kiriot22.com/releases/ESP.lua"))()
+ 
+-- config
+ESP.Players = false
+ESP.Boxes = true
+ESP.Names = true
+ESP:Toggle(true)
+ 
+-- object
+ESP:AddObjectListener(Workspace.Rake, { -- Object Path, For example: Workspace.ThisFolder
+    Name = "HumanoidRootPart", --Object name inside of the path, for example: Workspace.ThisFolder.Item_1
+    CustomName = "Rake", -- Name you want to be displayed
+    Color = Color3.fromRGB(0, 255, 0), -- Color
+    IsEnabled = "Rake" -- Any name, has to be the same as the last line: ESP.TheNameYouWant
+})
+ESP.Rake = true
